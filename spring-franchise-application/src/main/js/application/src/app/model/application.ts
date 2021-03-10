@@ -1,14 +1,14 @@
 export class Application {
-    id: integer;
+    id: number;
     name: string;
-    number: integer;
-    birthdate: date;
+    number: number;
+    birthdate: string;
     address: string;
-    phone: long;
+    phone: number;
     email: string;
     dsc1: string;
     dsc2: string;
-    investment: float;
+    investment: number;
     area: string;
     note: string;
 }

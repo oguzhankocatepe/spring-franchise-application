@@ -1,0 +1,38 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Number</th>
+          <th scope="col">BirthDate</th>
+          <th scope="col">Address</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Email</th>
+          <th scope="col">Dsc1</th>
+          <th scope="col">Dsc2</th>
+          <th scope="col">Investment</th>
+          <th scope="col">Area</th>
+          <th scope="col">Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let application of applications">
+          <td>{{ application.id }}</td>
+          <td>{{ application.name }}</td>
+          <td>{{ application.number }}</td>
+          <td>{{ application.birthdate }}</td>
+          <td>{{ application.address }}</td>
+          <td>{{ application.phone }}</td>
+          <td><a href="mailto:{{ application.email }}">{{ application.email }}</a></td>
+          <td>{{ application.dsc1 }}</td>
+          <td>{{ application.dsc2 }}</td>
+          <td>{{ application.investment }}</td>
+          <td>{{ application.area }}</td>
+          <td>{{ application.note }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
